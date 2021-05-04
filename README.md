@@ -18,3 +18,7 @@ A second resource that is required but not included is the Lexical Variant Gener
 ### How do I run the code?
 
 The system should be started by the main method contained in the GirotraABI class.  The various actions needed to train or test the system can be selected by setting the RunType object, runType, within the "run" method to one of the specified enum values.
+
+### Contact for questions?
+
+*glenn.t.gobbel@vumc.org*
