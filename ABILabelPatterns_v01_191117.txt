@@ -1,0 +1,105 @@
+Category	Subtype	RegularExpression
+anatomy	abi	abi\'?s?
+anatomy	abi	(ankle[ \t]*)?brachial[ \t]*ind(ex|ices)
+anatomy	abi	ankle[ \t]*[/-][ \t]*brachial
+anatomy	abi	abi[ \t]*[/-][ \t]*rest
+anatomy	abi	abix
+anatomy	abi	brachial.?index
+anatomy	abi	ankle
+anatomy	abi	abi[ \t]*value
+anatomy	abi	abi[ \t]*\\(numeric value\\)
+anatomy	abi	a[ \t]*\\/?[ \t]*a[ \t]*(ratio|i)?
+anatomy	abi	ankle[ \t]*[\\/\\-]?[ \t]*arm[ \t]*(press\\.?(ure)?|ind(ex|ices))
+anatomy	tbi	tbi\'?s?
+anatomy	tbi	toe[ \t]*brachial[ \t]*ind(ex|ices).?
+anatomy	tbi	\\d-\\d[ \t]*toes
+anatomy	tbi	toe[ \t]*ind(ex|ices)
+anatomy	tbi	toe[ \t]*pressure.?
+anatomy	tbi	toe[ \t]*[/-][ \t]*brachial[ \t]*ind(ex|ices).?
+anatomy	tbi	toe-brachial[ \t]*ind(ex|ices)
+anatomy	tbi	toe[ \t]*press\\.?(ure)?
+anatomy	tbi	hallux[ \t]*[/-][ \t]*brachial
+anatomy	tbi	d\\.?b\\.?i\\.?
+anatomy	tbi	(toe|digit(al)?)[ \t]*[\\/\\-]?[ \t]*(arm|brachial)[ \t]*(press\\.?(ure)?|ind(ex|ices))
+anatomy	tbi	(toe|digit(al)?)[ \t]*abis?
+laterality	right	right(?=:|-|\\.|~|;|\\b|\\.:)
+laterality	right	(?<=(\\d|\\b))r(:|-|\\.|~|;|\\b|\\)|:|p|d)
+laterality	right	\\(r\\)
+laterality	right	\\brt(:|-|\\.|~|;|\\b|\\.:)
+laterality	right	right-?
+laterality	right	rt(:|-|\\.|~|;|\\b|\\.:)
+laterality	right	rle(:|-|\\.|~|;|\\b|\\.:)
+laterality	right	rdp
+laterality	right	rpt
+laterality	right	right[ \t]*\\-?[ \t]*sided?
+laterality	left	left(?=:|-|\\.|~|;|\\b)
+laterality	left	(?<=(\\d|\\b))l(:|-|\\.|~|;|\\b|\\.:|\\)|p|d)
+laterality	left	\\(l\\)
+laterality	left	left-?
+laterality	left	lle(:|-|\\.|~|;|\\b)
+laterality	left	lf?t(:|-|\\.|~|;|\\b|\\.:)
+laterality	left	ldp
+laterality	left	lpt
+laterality	left	\\(?(l|r)\\)?
+laterality	left	left[ \t]*\\-?[ \t]*sided?
+laterality	bilateral	bilateral(ly)?
+laterality	bilateral	bl
+laterality	bilateral	both[ \t]*extremities
+laterality	bilateral	right[ \t]*and[ \t]*left[ \t]*(sides)?
+laterality	bilateral	b\\/l
+laterality	bilateral	both[ \t]*sides
+laterality	bilateral	bi
+negativeIndexinformation	nonIndexArtery	c\\.?f\\.?a\\.?
+negativeIndexinformation	nonIndexArtery	(common[ \t]*)?femoral[ \t]*art(er(y|ies)?)?
+negativeIndexinformation	nonIndexArtery	(distal[ \t]*)?popliteal[ \t]*(art(er(y|ies))?)?
+negativeIndexinformation	nonIndexArtery	s\\.?f\\.?a\\.?
+negativeIndexinformation	nonIndexArtery	profundal[ \t]*(art(er(y|ies))?)?
+negativeIndexinformation	nonIndexArtery	pop\\.?
+negativeIndexinformation	nonIndexArtery	peroneal[ \t]*(art(er(y|ies))?)?
+negativeIndexinformation	nonIndexArtery	lower[ \t]*extremity[ \t]*(art(er(y|ies))?)?
+negativeIndexinformation	nonIndexArtery	i\\.?c\\.?(a\\.?)?
+negativeIndexinformation	nonIndexArtery	(ext|int)\\.?(ernal)?[ \t]*carotid[ \t]*(art(er(y|ies))?)?
+negativeIndexinformation	nonIndexArtery	fem
+negativeIndexinformation	otherIndexType	(radial|ulnar)[ \t]*(ind(ex|ices))?
+negativeIndexinformation	indexValueInterpretation	acceptable
+negativeIndexinformation	indexValueInterpretation	(borderline[ \t]*)?normal
+negativeIndexinformation	indexValueInterpretation	diminished
+negativeIndexinformation	indexValueInterpretation	mild[ \t]*((to|\\/)?[ \t]*moderate)?
+negativeIndexinformation	indexValueInterpretation	moderate[ \t]*(to|\\/)?[ \t]*mild
+negativeIndexinformation	indexValueInterpretation	(mild(ly)?|mod(\\.|erate(ly)?)?)[ \t]*(obstruct(ed|ion)?|reduc(ed|tion))
+negativeIndexinformation	indexValueInterpretation	mod(\\.|erate)?
+negativeIndexinformation	indexValueInterpretation	mod(\\.|erately)?[ \t]*severe
+negativeIndexinformation	indexValueInterpretation	not?[ \t]*sig(\\.|nificant)?
+negativeIndexinformation	indexValueInterpretation	obstruction
+negativeIndexinformation	indexValueInterpretation	sev(\\.|erity)?
+negativeIndexinformation	indexValueInterpretation	severe[ \t]*obstruction
+negativeIndexinformation	indexValueInterpretation	severely[ \t]*obstructed
+negativeIndexinformation	indexValueInterpretation	severe[ \t]*(pad|ischemia|obstruction)
+negativeIndexinformation	listIndex	"(?<!\\([ \t]{0,4})\\d{1,2}[ \t]*\\)"
+negativeIndexinformation	flow	velocity
+negativeIndexinformation	flow	flow
+negativeIndexinformation	miscellaneous	plaques?
+negativeIndexinformation	miscellaneous	(?:\\d[ \t]*)x(?:[ \t]*\\d)
+negativeIndexinformation	unit	(mm|cm)?([ \t]*(\\/|per)?[ \t]*(s(ec)?))?
+negativeIndexinformation	unit	hr
+negativeIndexinformation	unit	min
+negativeIndexinformation	unit	sec
+negativeIndexinformation	unit	diameter
+negativeIndexinformation	unit	mls?([ \t]*(\\/|per)?[ \t]*(m(in)?))?
+negativeIndexinformation	unit	mm[ \t]*hg
+nonCompressible	noncompressible	calcifi(ed|cations?)
+nonCompressible	noncompressible	(un|no(n|t)|im)[ \t]*\\-?[ \t]*compressible
+nonCompressible	noncompressible	calcified
+pressure	pressureankle	ankle[ \t]+(b\\/?p|(blood[ \t]*press(\\.|ure)?)
+pressure	pressureankle	dorsalis[ \t]*pedis[ \t]*(artery[ \t]*(systolic)?)?(b\\/?p|(blood[ \t]*press(\\.|ure)?)
+pressure	pressureankle	posterior[ \t]*tibial[ \t]*(artery[ \t]*(systolic)?)?(b\\/?p|(blood[ \t]*press(\\.|ure)?)
+pressure	pressuretoe	brachial[ \t]*(arm|artery)?[ \t]*(systolic)[ \t]*(b\\/?p|(blood[ \t]*press(\\.|ure)?)
+pressure	pressuretoe	g\\.?t\\.?p\\.?
+pressure	pressuretoe	(toe|digit(al)?)[ \t]*pressures?
+pressure	pressureunspecified	pressures?
+temporalreference	historical	earlier
+temporalreference	historical	previous(ly)?
+temporalreference	historical	prior
+temporalreference	historical	today
+temporalreference	date	(0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01])[- /.](19|20)?[0-9]{2}
+temporalreference	date	"(jan(\\.|uary)?|feb(\\.|ruary)?|mar(\\.|ch)?|apr(\\.|il))?|may|jun(\\.|e)|jul(\\.|y)|aug(\\.|ust)|sep(\\.|tember)|oct(\\.|ober)|nov(\\.|ember)|dec(\\.|ember)[ \t]+(0?[1-9]|[12][0-9]|3[01])[ \t]*[,][ \t]*(19|20)?[0-9]{2}"
